@@ -1,0 +1,372 @@
+
+:root {
+    --jade-50: #effef7;
+    --jade-100: #dafeef;
+    --jade-200: #b8fadd;
+    --jade-300: #81f4c3;
+    --jade-400: #43e5a0;
+    --jade-500: #1acd81;
+    --jade-600: #0fa968;
+    --jade-700: #108554;
+    --jade-800: #126945;
+    --jade-900: #11563a;
+    --jade-950: #03301f;
+
+}
+html {
+    background-color: var(--jade-50);
+}
+
+body {
+    margin: 0;
+
+    font-family: 'Inter', sans-serif;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+header {
+    background-color: var(--jade-50);
+    display: flex;
+    min-height: 8rem;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+}
+
+header .logoSection {
+    margin-left: 0.5rem;
+    display: flex;
+    align-items: center;
+    font-size: 26px;
+    padding-left: 0.2rem;
+}
+
+#headerLogoImage {
+    width: 8rem;
+    height: 8rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+nav {
+    margin-left: 2rem;
+}
+
+.navLink {
+    font-size: 23px;
+    font-weight: 600;
+    padding-right: 1rem;
+    color: gray;
+    
+}
+
+.navLink:hover{
+    color: black;
+}
+
+#banner {
+    padding: 100px;
+    background-image: url(images/Banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    color: var(--jade-950);
+    font-size: 50px;
+    color: white;
+}
+
+#aboutUsSection {
+    margin: 0;
+    padding: 2rem;
+    width: auto;
+    height: auto;
+    /*background-color: darkblue;*/
+    color: black;
+    text-align: center;
+}
+
+#servicesContainerSection {
+    display: flex;
+    flex-direction: row;
+    /*justify-content: space-between;*/
+    justify-content: center;
+    justify-items: center;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+#servicesContainerSection h2 {
+    text-align: center;
+    width: 100%;
+    color: black;
+    
+}
+
+.serviceCard {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    padding: 10px;
+    border: 5px solid var(--jade-700);
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    border-width: 1px;
+    background-color: white;
+    color: var(--jade-700);;
+    width: 20%;
+
+}
+
+.serviceCard h2 p {
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+
+.serviceCard h1, img {
+    align-self: center;
+}
+
+.serviceCard img {
+    /*object-fit:cover;*/
+    width: 80%;
+    height: auto;
+}
+/*
+#contactFormContainer {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px 60px;
+    background-color:darkcyan;
+    border: 1px solid white;
+    align-self: center;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    box-shadow: 0px 0px 8px black;
+}
+
+#contactFormContainer h2, label {
+    color: white;
+}
+#contactFormContainer h2 {
+    text-align: center;
+    margin: 0;
+}
+
+#contactFormContainer form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.formRow {
+    display: flex;
+    margin: 5px 0;
+}
+.formRow label {
+    flex-basis: 80px;
+}
+
+.formRow input {
+    flex: 1;
+}
+
+.formRow textarea {
+    flex: 1;
+}
+
+#contactFormContainer button {
+    background-color: dodgerblue;
+    color: white;
+    border: none;
+    margin-top: 5px;
+    padding: 6px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    cursor: pointer;
+}*/
+
+
+
+#contactFormContainer {
+    width: 100%;
+    display: flex;
+    flex: none;
+    justify-content: center;
+
+}
+
+#contactFormContainer form {
+    
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    width: 80%;
+
+    padding: 20px 60px;
+    margin: 10px;
+    background-color:var(--jade-800);
+
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    box-shadow: 0px 0px 8px black;
+}
+
+#contactFormContainer h2 {
+    text-align: center;
+    width: 100%;
+    color: white;
+}
+
+#contactFormContainer p, li {
+    color: white;
+}
+
+#contactFormContainer ul {
+    padding-left: 0;
+    list-style-type: none;
+}
+
+
+
+
+
+#contactFormContainer #contactRow {
+    display: flex;
+    flex-direction: row;
+}
+
+.contactColumn{
+    display: flex;
+    flex-direction: column;
+    /*flex: 1 1 auto;*/
+    width: 50%;
+    margin: 0, 10px;
+}
+
+.contactColumn input, textarea, button {
+    margin: 5px 0;
+}
+
+.formRow {
+    display: flex;
+    margin: 5px 0;
+}
+/*
+.formRow label {
+    flex-basis: 80px;
+}
+
+.formRow input {
+    flex: 1;
+}
+
+.formRow textarea {
+    flex: 1;
+}*/
+
+#contactFormContainer button {
+    background-color: var(--jade-500);
+    color: white;
+    border: none;
+    margin-top: 5px;
+    padding: 6px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    cursor: pointer;
+}
+
+footer {
+    padding: 10px;
+    text-align: center;
+    background-color: var(--jade-950);
+    color: white;
+}
+
+#contactFormContainer img {
+    width: 15px;
+}
+
+#GalleryContainerSection {
+    margin: 0;
+    padding: 0 ;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    
+}
+
+#GalleryContainerSection h2 {
+    text-align: center;
+    width: 100%;
+    color: black;
+}
+
+.GalleryRow {
+    display: flex;
+    padding: 0 10%;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+.GalleryColumn img {
+    margin-top: 5px;
+    width: 100%;
+}
+
+.GalleryColumn {
+    flex: 25%;
+    padding: 5px;
+}
+
+
+
+@media (max-width:700px) {
+    header {
+        flex-direction: column;
+    }
+    nav{
+        padding: 0.5rem, 0px;
+        
+    }
+
+    .navLink {
+        font-size: 15px;
+        
+    }
+
+    #banner {
+        font-size: 30px;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .contactColumn{
+        width: 100%;
+    }
+}

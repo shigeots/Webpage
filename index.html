@@ -1,11 +1,155 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<title>Our Funky HTML Page</title>
-<meta name="description" content="Our first page">
-<meta name="keywords" content="html tutorial template">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webpage</title>
+    <link rel="stylesheet" href="style.css"/>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Noto+Sans+JP&family=Open+Sans&display=swap" rel="stylesheet">
+
 </head>
 <body>
-Content goes here.
+    <!--header-->
+    <header>
+        <section class="logoSection">
+            <img id="headerLogoImage" src="images/Logo.png" alt="logo"/>
+            <h1>会社名</h1>
+        </section>
+        <nav>
+            <a class="navLink" href="#aboutUsSection">会社について</a>
+            <a class="navLink" href="#servicesContainerSection">サービス</a>
+            <a class="navLink" href="#GalleryContainerSection">ギャラリー</a>
+            <a class="navLink" href="#contactFormContainer">お問い合わせ</a>
+        </nav>
+    </header>
+
+    <!--Banner-->
+    <section id="banner">
+        <p><b>ようこそ 会社名</b></p>
+        
+    </section>
+
+    <!--About us-->
+    <section id="aboutUsSection">
+        <h2>
+            会社について
+        </h2>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo. I am text block. Click edit button to change this text. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo. I am text block. Click edit button to change this text. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
+        </p>
+    </section>
+
+    <!--Services cards-->
+    <section id="servicesContainerSection">
+        <h2>サービス</h2>
+        <br/>
+        <article class="serviceCard">
+            <h1>サービス 1</h1>
+            <img src="images/ServiceCard/ServiceCardImage1.jpg" alt="ServiceCardImage"/>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo. I am text block. Click edit button to change this text. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo. I am text block. Click edit button to change this text. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
+            </p>
+        </article>
+
+        <article class="serviceCard">
+            <h1>サービス 2</h1>
+            <img src="images/ServiceCard/ServiceCardImage2.jpg" alt="ServiceCardImage"/>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
+            </p>
+        </article>
+
+        <article class="serviceCard">
+            <h1>サービス 3</h1>
+            <img src="images/ServiceCard/ServiceCardImage3.jpg" alt="ServiceCardImage"/>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
+            </p>
+        </article>
+    </section>
+
+    <section id="GalleryContainerSection">
+        <h2>ギャラリー</h2>
+        <div class="GalleryRow">
+            <div class="GalleryColumn">
+                <img src="images/Gallery/GalleryImage1.jpg" alt="Gallery image 1">
+                <img src="images/Gallery/GalleryImage2.jpg" alt="Gallery image 2">
+                <img src="images/Gallery/GalleryImage3.jpg" alt="Gallery image 3">
+                <img src="images/Gallery/GalleryImage4.jpg" alt="Gallery image 4">
+            </div>
+    
+            <div class="GalleryColumn">
+                <img src="images/Gallery/GalleryImage5.jpg" alt="Gallery image 1">
+                <img src="images/Gallery/GalleryImage6.jpg" alt="Gallery image 2">
+                <img src="images/Gallery/GalleryImage7.jpg" alt="Gallery image 3">
+                <img src="images/Gallery/GalleryImage8.jpg" alt="Gallery image 4">
+            </div>
+        </div>
+        
+    </section>
+<!--
+    <section id="contactFormContainer">
+        <form>
+            <h2>Contacto</h2>
+            <div class="formRow">
+                <label for="name">Nombre</label>
+                <input type="text" placeholder="Ingrese su nombre" id="nameInput"/>      
+            </div>
+            <div class="formRow">
+                <label for="email">Email</label>
+                <input type="text" placeholder="Ingrese su correo" id="emailInput"/>      
+            </div>
+            <div class="formRow">
+                <label for="email">Mensaje</label>
+                <textarea placeholder="Ingrese su mensaje" id="messajeTextArea" cols="30" rows="5"></textarea>  
+            </div>
+            <button type="submit" id="sendButton">Enviar</button>
+        </form>
+    </section>
+    -->
+
+
+    <section id="contactFormContainer">
+        <form>
+            
+            <h2>お問い合わせ</h2>
+            
+            <div class="contactColumn">
+                <p>以下の方法で会社にお問い合わせいただけます。</p>
+                <ul>
+                    <li>
+                        <img src="images/Icons/phone.png" alt=""/>
+                        電話: 77055568
+                    </li>
+                    <li>
+                        <img src="images/Icons/message.png" alt=""/>
+                        Eメール: esteEsElCorreo@gamil.com
+                    </li>
+                    <li>
+                        <img src="images/Icons/marker.png" alt=""/>
+                        住所: Calle 6 de agosto #627, Santa Cruz de la Sierra
+                    </li>
+                </ul>
+            </div>
+    
+            <div class="contactColumn">
+                <input type="text" placeholder="名前を入力してください。" id="nameInput"/>      
+                <input type="text" placeholder="Eメールを入力してください。" id="emailInput"/>      
+                <textarea placeholder="メッセージを入力してください。" id="messajeTextArea" cols="30" rows="5"></textarea>  
+                <button type="submit" id="sendButton">送信します</button>
+            </div>
+            
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; Company name. All Rights Reserved.
+            No portion of this web site may be reproduced or duplicated without the express written permission of Company name.
+            This web site is written in Japanese only.</p>
+    </footer>
+
 </body>
 </html>
