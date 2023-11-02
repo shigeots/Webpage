@@ -75,17 +75,17 @@
         <h2>ギャラリー</h2>
         <div class="GalleryRow">
             <div class="GalleryColumn">
-                <img src="images/Gallery/GalleryImage1.jpg" alt="Gallery image 1">
-                <img src="images/Gallery/GalleryImage2.jpg" alt="Gallery image 2">
-                <img src="images/Gallery/GalleryImage3.jpg" alt="Gallery image 3">
-                <img src="images/Gallery/GalleryImage4.jpg" alt="Gallery image 4">
+                <img class="GalleryImage" src="images/Gallery/GalleryImage1.jpg" alt="Gallery image 1" onclick="showGalleryImageModal(this)">
+                <img class="GalleryImage" src="images/Gallery/GalleryImage2.jpg" alt="Gallery image 2" onclick="showGalleryImageModal(this)">
+                <img class="GalleryImage" src="images/Gallery/GalleryImage3.jpg" alt="Gallery image 3" onclick="showGalleryImageModal(this)">
+                <img class="GalleryImage" src="images/Gallery/GalleryImage4.jpg" alt="Gallery image 4" onclick="showGalleryImageModal(this)">
             </div>
     
             <div class="GalleryColumn">
-                <img src="images/Gallery/GalleryImage5.jpg" alt="Gallery image 1">
-                <img src="images/Gallery/GalleryImage6.jpg" alt="Gallery image 2">
-                <img src="images/Gallery/GalleryImage7.jpg" alt="Gallery image 3">
-                <img src="images/Gallery/GalleryImage8.jpg" alt="Gallery image 4">
+                <img class="GalleryImage" src="images/Gallery/GalleryImage5.jpg" alt="Gallery image 1" onclick="showGalleryImageModal(this)">
+                <img class="GalleryImage" src="images/Gallery/GalleryImage6.jpg" alt="Gallery image 2" onclick="showGalleryImageModal(this)">
+                <img class="GalleryImage" src="images/Gallery/GalleryImage7.jpg" alt="Gallery image 3" onclick="showGalleryImageModal(this)">
+                <img class="GalleryImage" src="images/Gallery/GalleryImage8.jpg" alt="Gallery image 4" onclick="showGalleryImageModal(this)">
             </div>
         </div>
         
@@ -126,19 +126,20 @@
                     </li>
                     <li>
                         <img src="images/Icons/message.png" alt=""/>
-                        Eメール: esteEsElCorreo@gamil.com
+                        メールアドレス: esteEsElCorreo@gamil.com
                     </li>
                     <li>
                         <img src="images/Icons/marker.png" alt=""/>
-                        住所: Calle 6 de agosto #627, Santa Cruz de la Sierra
+                        住所: 〒105-0011 東京都港区芝公園4丁目2-8
                     </li>
                 </ul>
             </div>
     
             <div class="contactColumn">
+                <p>下記フォームよりお問い合わせいただけます。</p>
                 <input type="text" placeholder="名前を入力してください。" id="nameInput"/>      
-                <input type="text" placeholder="Eメールを入力してください。" id="emailInput"/>      
-                <textarea placeholder="メッセージを入力してください。" id="messajeTextArea" cols="30" rows="5"></textarea>  
+                <input type="text" placeholder="メールアドレスを入力してください。" id="emailInput"/>      
+                <textarea placeholder="お問い合わせ内容" id="messajeTextArea" cols="30" rows="5"></textarea>  
                 <button type="submit" id="sendButton">送信します</button>
             </div>
             
@@ -150,6 +151,17 @@
             No portion of this web site may be reproduced or duplicated without the express written permission of Company name.
             This web site is written in Japanese only.</p>
     </footer>
+
+
+        <!-- The Modal -->
+    <div id="myModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+        <span class="close">&times;</span>
+        <img id="modalImage" style="width:100%">
+        </div>
+    </div>
+    <script type="text/javascript" src="app.js"> </script>
 
 </body>
 </html>
