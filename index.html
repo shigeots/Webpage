@@ -118,7 +118,7 @@
             <h2>お問い合わせ</h2>
             
             <div class="contactColumn">
-                <p>以下の方法で会社にお問い合わせいただけます。</p>
+                <p>会社の連絡先情報。</p>
                 <ul>
                     <li>
                         <img src="images/Icons/phone.png" alt=""/>
@@ -134,13 +134,18 @@
                     </li>
                 </ul>
             </div>
-    
+
             <div class="contactColumn">
                 <p>下記フォームよりお問い合わせいただけます。</p>
-                <input type="text" placeholder="名前を入力してください。" id="nameInput"/>      
-                <input type="text" placeholder="メールアドレスを入力してください。" id="emailInput"/>      
-                <textarea placeholder="お問い合わせ内容" id="messajeTextArea" cols="30" rows="5"></textarea>  
-                <button type="submit" id="sendButton">送信します</button>
+
+                <!--<form action="/action_page.php" method="post" target="_blank"> https://formsubmit.co/el/vuyime--> 
+               <form action="https://formsubmit.co/el/vuyime" method="post" target="_blank">
+                    
+                    <input type="text" name="name" placeholder="名前を入力してください。" id="nameInput"/>      
+                    <input type="email" name="email" placeholder="メールアドレスを入力してください。" id="emailInput"/>      
+                    <textarea name="message" placeholder="お問い合わせ内容" id="messajeTextArea" cols="30" rows="5"></textarea>  
+                    <button type="submit" id="sendButton">送信します</button>
+                </form>
             </div>
             
         </form>

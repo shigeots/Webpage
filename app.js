@@ -20,7 +20,7 @@
 
     function showGalleryImageModal(element) {
         document.getElementById("modalImage").src = element.src;
-        modal.style.display = "block";
+        modal.style.display = "flex";
     }
     /*
     function myFunction2() {
