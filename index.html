@@ -90,30 +90,9 @@
         </div>
         
     </section>
-<!--
-    <section id="contactFormContainer">
-        <form>
-            <h2>Contacto</h2>
-            <div class="formRow">
-                <label for="name">Nombre</label>
-                <input type="text" placeholder="Ingrese su nombre" id="nameInput"/>      
-            </div>
-            <div class="formRow">
-                <label for="email">Email</label>
-                <input type="text" placeholder="Ingrese su correo" id="emailInput"/>      
-            </div>
-            <div class="formRow">
-                <label for="email">Mensaje</label>
-                <textarea placeholder="Ingrese su mensaje" id="messajeTextArea" cols="30" rows="5"></textarea>  
-            </div>
-            <button type="submit" id="sendButton">Enviar</button>
-        </form>
-    </section>
-    -->
-
 
     <section id="contactFormContainer">
-        <form>
+        <div id="contactContainer">
             
             <h2>お問い合わせ</h2>
             
@@ -134,21 +113,24 @@
                     </li>
                 </ul>
             </div>
-
+            
             <div class="contactColumn">
                 <p>下記フォームよりお問い合わせいただけます。</p>
 
+                <!--https://formsubmit.co/el/vuyime-->
                 <!--<form action="/action_page.php" method="post" target="_blank"> https://formsubmit.co/el/vuyime--> 
-               <form action="https://formsubmit.co/el/vuyime" method="post" target="_blank">
+                <form action="https://formsubmit.co/shigeots@gmail.com" method="POST">
                     
-                    <input type="text" name="name" placeholder="名前を入力してください。" id="nameInput"/>      
-                    <input type="email" name="email" placeholder="メールアドレスを入力してください。" id="emailInput"/>      
-                    <textarea name="message" placeholder="お問い合わせ内容" id="messajeTextArea" cols="30" rows="5"></textarea>  
+                    <input type="text" name="name" placeholder="名前を入力してください。" id="nameInput" required/>      
+                    <input type="email" name="email" placeholder="メールアドレスを入力してください。" id="emailInput" required/>      
+                    <input name="phoneNumber" placeholder="phone number を入力してください。"  type="text" id="phoneInput"  required/> 
+                    <textarea name="message" placeholder="お問い合わせ内容" id="messajeTextArea" cols="30" rows="5" required></textarea>
+                    <input type="hidden" name="_captcha" value="false"/>
                     <button type="submit" id="sendButton">送信します</button>
                 </form>
             </div>
             
-        </form>
+        </div>
     </section>
 
     <footer>
@@ -166,6 +148,7 @@
         <img id="modalImage" style="width:100%">
         </div>
     </div>
+
     <script type="text/javascript" src="app.js"> </script>
 
 </body>
